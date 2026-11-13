@@ -12,9 +12,11 @@ Choose **Play Pong**. Move the mouse over the court, drag on a touchscreen, or u
 
 ## Deploy
 
+Live site: https://raskindavid.com/
+
 Repository: https://github.com/OlegYazvin/david-raskin
 
-GitHub Pages publishes the root of the `main` branch. Push a commit to update the page. `.nojekyll` keeps publishing buildless. The intended custom domain is `raskindavid.com`; the GitHub Pages configuration must also contain that custom domain.
+GitHub Pages publishes the root of the `main` branch. Push a commit to update the page. `.nojekyll` keeps publishing buildless. The custom domain is `raskindavid.com`, configured in GitHub Pages and preserved by the tracked `CNAME` file. HTTPS enforcement is enabled; `www.raskindavid.com` redirects to the apex domain.
 
 ### Cloudflare DNS
 
