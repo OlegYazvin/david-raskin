@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3f0e8">
+  <title>David Raskin. A website, technically.</title>
+  <meta name="description" content="Four photos of David Raskin, one very honest message, and a game of Pong. You're welcome, David.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="pong.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a href="#" class="wordmark" aria-label="David Raskin home">dr<span>®</span></a>
+    <span class="header-note"><span class="status-dot" aria-hidden="true"></span> A WEBSITE, TECHNICALLY.</span>
+    <a class="nav-link" href="#pong">Play some Pong <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="eyebrow hero-eyebrow"><span>THE MAN. THE MYTH. THE AVAILABLE PHOTOS.</span><span>EST. JUST NOW</span></div>
+      <h1 id="hero-title">DAVID RASKIN<span class="title-period">.</span></h1>
+      <div class="intro-row">
+        <p class="intro">I got you a website, but I didn't have much time, so this is all I could think to put on it.</p>
+        <a class="round-link" href="#photos" aria-label="See the four photos"><span aria-hidden="true">↓</span></a>
+      </div>
+    </section>
+
+    <section class="photos wrap" id="photos" aria-labelledby="photos-title">
+      <div class="section-heading"><h2 id="photos-title">A few sides of David.</h2><span class="eyebrow">THE COMPLETE COLLECTION / 01–04</span></div>
+      <div class="photo-grid">
+        <figure class="photo-card">
+          <div class="photo-frame"><img src="assets/david-01.webp" width="515" height="676" alt="David wearing glasses, giving the camera a sideways glance" fetchpriority="high"><span class="photo-index" aria-hidden="true">01</span></div>
+          <figcaption><h3>The side-eye.</h3><span>STRONG FIRST IMPRESSION.</span></figcaption>
+        </figure>
+        <figure class="photo-card">
+          <div class="photo-frame"><img src="assets/david-02.webp" width="414" height="697" alt="David sitting outdoors with his eyes closed"><span class="photo-index" aria-hidden="true">02</span></div>
+          <figcaption><h3>The vision.</h3><span>EYES OPTIONAL.</span></figcaption>
+        </figure>
+        <figure class="photo-card">
+          <div class="photo-frame"><img class="photo-three" src="assets/david-03.webp" width="632" height="1800" alt="David in profile, deep in thought with a hand near his face" loading="lazy"><span class="photo-index" aria-hidden="true">03</span></div>
+          <figcaption><h3>The thinker.</h3><span>NO FURTHER COMMENT.</span></figcaption>
+        </figure>
+        <figure class="photo-card">
+          <div class="photo-frame"><img class="photo-four" src="assets/david-04.webp" width="1800" height="1350" alt="A slightly blurry photo of David turning his head" loading="lazy"><span class="photo-index" aria-hidden="true">04</span></div>
+          <figcaption><h3>The motion picture.</h3><span>TOO FAST FOR THE CAMERA.</span></figcaption>
+        </figure>
+      </div>
+      <p class="gallery-note"><span aria-hidden="true">✳</span> Original quality. Unreasonable proportions.</p>
+    </section>
+
+    <section class="arcade" id="pong" aria-labelledby="pong-title">
+      <div class="wrap">
+        <div class="arcade-intro"><div><span class="eyebrow">BONUS FEATURE / NO EXTRA CHARGE</span><h2 id="pong-title">Enough David.<br>Here's Pong<span>.</span></h2></div><p>Because even this website<br>needed something to do.</p></div>
+        <div class="game-panel">
+          <div class="scoreboard" aria-label="Score"><div><span class="eyebrow">YOU</span><span id="player-score">0</span></div><span class="scoreboard-center">FIRST TO 7<br><span>MAKE DAVID PROUD.</span></span><div><span class="eyebrow">COMPUTER</span><span id="cpu-score">0</span></div></div>
+          <div class="court" id="pong-court" data-state="ready" tabindex="0" role="group" aria-label="Pong court. Use W and S or the up and down arrows, move your mouse, or drag to control your left paddle." aria-describedby="game-instructions">
+            <canvas id="pong-canvas" width="960" height="520" aria-label="Pong game, you versus the computer">Your browser needs canvas support to play Pong.</canvas>
+            <div class="game-overlay" id="game-overlay"><span class="eyebrow">THE INTERNET'S ORIGINAL TIME WASTER</span><h3 id="overlay-title">Ready when you are.</h3><p id="overlay-description">A website. Four photos. One chance at glory.</p></div>
+          </div>
+          <div class="game-controls"><div class="game-buttons"><button class="button button-primary" id="start-game" type="button">Play Pong <span aria-hidden="true">↗</span></button><button class="button button-reset" id="reset-game" type="button" aria-label="Reset Pong game">Reset <span aria-hidden="true">↺</span></button></div><p id="game-instructions"><span class="desktop-instructions"><kbd>↑</kbd> <kbd>↓</kbd> or <kbd>W</kbd> <kbd>S</kbd> · </span>Move mouse or drag to play<span class="desktop-instructions"><br>Space to pause</span></p></div>
+          <p class="sr-only" id="game-status" role="status" aria-live="polite">Ready to play. First to seven wins.</p>
+          <noscript><p class="no-script">Turn on JavaScript to play Pong. The Davids above work either way.</p></noscript>
+        </div>
+        <div class="arcade-footnote"><span class="eyebrow">100% FREE. APPROXIMATELY 100% PONG.</span><span aria-hidden="true">✳</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap"><a class="wordmark" href="#" aria-label="Back to top">dr<span>®</span></a><p>You're welcome, David.</p><a class="footer-top" href="#">Back to top ↑</a></footer>
+</body>
+</html>
